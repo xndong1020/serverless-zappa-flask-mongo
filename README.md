@@ -23,15 +23,9 @@ npm i -g serverless
 serverless config credentials --provider aws --key <your_access_key> --secret <your_access_secret> --profile <your_profile>
 ```
 
-## Step 02: Create/update deployment
+## Step 02 : Test Locally
 ```
-For init deployment:
-zappa deploy <target env>
-Example:
-zappa deploy dev
-
-For update
-zappa update <target env>
-Example:
-zappa update dev
+pipenv install
+python my_app.py
 ```
+Then the root url will be http://localhost:5000/, and the resources will be http://localhost:5000/requests, http://localhost:5000/reponses
