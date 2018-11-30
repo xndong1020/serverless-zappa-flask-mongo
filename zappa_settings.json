@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "my_app.app",
+        "profile_name": "serverless-admin",
+        "project_name": "serverless-pyth",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-irmxur4ph",
+        "aws_region": "us-east-2"
+    }
+}
