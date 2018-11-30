@@ -11,8 +11,7 @@ def get_all_requests():
     results = []
     requests = Db.get_instance().requests.find({}, {"_id": 0})
 
-    for item in requests:
-        results.append(item)
+    [results.append(item) for item in requests]
 
     return jsonify(results), 200
 
@@ -35,8 +34,7 @@ def get_all_reponses():
     results = []
     reponses = Db.get_instance().reponses.find({}, {"_id": 0})
 
-    for item in reponses:
-        results.append(item)
+    [results.append(item) for item in reponses]
 
     return jsonify(results), 200
 
