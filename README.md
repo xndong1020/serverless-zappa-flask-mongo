@@ -1,4 +1,6 @@
-This project is created using [Zappa](https://github.com/Miserlou/Zappa), [Flask](http://flask.pocoo.org/) and [MongoDB](https://www.mongodb.com/)
+This project is created using  [Zappa](https://github.com/Miserlou/Zappa) , [Flask](http://flask.pocoo.org/) and [MongoDB](https://www.mongodb.com/)
+
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
 Before deployment to AWS, make sure you have activated your virtual environment(pipenv or virtualenv, I recommend pipenv)
 
