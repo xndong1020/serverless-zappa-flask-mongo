@@ -1,4 +1,5 @@
 import pymongo
+import json
 
 
 class Db:
@@ -6,9 +7,12 @@ class Db:
 
     @staticmethod
     def create_instance():
-        mongo_client = pymongo.MongoClient('mongodb://ds121834.mlab.com', 21834)
-        Db._instance = mongo_client['webex']
-        Db._instance.authenticate('isdance', 'Cc51315704')
+        with open('project_settings.json') as f:
+            config = json.load(f)
+
+        mongo_client = pymongo.MongoClient(config['dev']['mongodb'], config['dev']['port'])
+        Db._instance = mongo_client[config['dev']['db']]
+        Db._instance.authenticate(config['dev']['username'], config['dev']['password'])
 
     @staticmethod
     def get_instance():

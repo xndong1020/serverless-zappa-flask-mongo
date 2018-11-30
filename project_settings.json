@@ -1,0 +1,9 @@
+{
+  "dev": {
+    "mongodb": "mongodb://ds121834.mlab.com",
+    "port": 21834,
+    "db": "webex",
+    "username": "isdance",
+    "password": "Cc51315704"
+  }
+}
