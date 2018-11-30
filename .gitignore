@@ -1,2 +1,9 @@
+# IDE related
 .idea/
+.vscode/
+
+# Virtual Env
 venv/
+
+# Compiled files
+*.pyc
