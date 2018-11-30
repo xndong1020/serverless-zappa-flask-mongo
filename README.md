@@ -1,5 +1,6 @@
 This project is created using [Zappa](https://github.com/Miserlou/Zappa), [Flask](http://flask.pocoo.org/) and [MongoDB](https://www.mongodb.com/)
-Before deployment to AWS, make sure you are using virtual environment(pipenv or virtualenv, I recommend pipenv)
+
+Before deployment to AWS, make sure you have activated your virtual environment(pipenv or virtualenv, I recommend pipenv)
 
 The root url for this API is https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/
 1. All requests
@@ -16,16 +17,28 @@ POST https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/reponses
 
 
 
-## Step 01: Setup your aws credentials
+## Step 01 : Test Locally
+```
+pipenv install
+pipenv shell
+python my_app.py
+```
+Then the root url will be http://localhost:5000/, and the resources will be located at http://localhost:5000/requests, http://localhost:5000/reponses
+
+## Optional Step 02: Setup your aws credentials, you don't need to follow if you just want to test locally
 ```
 npm i -g serverless
 
 serverless config credentials --provider aws --key <your_access_key> --secret <your_access_secret> --profile <your_profile>
 ```
 
-## Step 02 : Test Locally
+## Optional Step 03: Deployment, you don't need to follow if you just want to test locally
+new deployment
 ```
-pipenv install
-python my_app.py
+zappa deploy dev 
 ```
-Then the root url will be http://localhost:5000/, and the resources will be http://localhost:5000/requests, http://localhost:5000/reponses
+
+or update existing deployment
+```
+zapp update dev
+```
