@@ -12,10 +12,10 @@ GET https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/requests
 POST https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/requests
 
 3. All response
-GET https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/reponses
+GET https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/responses
 
 4. Create response
-POST https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/reponses
+POST https://hrbw32jk0d.execute-api.us-east-2.amazonaws.com/dev/responses
 
 
 
